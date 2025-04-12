@@ -1,8 +1,11 @@
 const jwt = require('jsonwebtoken');
 
 module.exports = (req, res, next) => {
+    console.log("📢 Requête reçue sur :", req.method, req.originalUrl);
+    console.log("🛠️ En-têtes reçus :", req.headers); // Vérifie les en-têtes
+
     const authHeader = req.header('Authorization');
-    console.log("📢 Requête reçue, vérification du token...");
+    console.log("🔍 Vérification du token...");
 
     if (!authHeader) {
         console.log("❌ Aucun token trouvé dans l'en-tête Authorization.");
