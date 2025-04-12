@@ -1,0 +1,64 @@
+/* src/styles/HomePage.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #222;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.lang-btn, .login-btn {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.lang-btn:hover, .login-btn:hover {
+  background: white;
+  color: #222;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px;
+}
+
+.signup-btn {
+  background: #ff4b2b;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signup-btn:hover {
+  background: #ff6b4b;
+}
